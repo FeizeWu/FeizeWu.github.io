@@ -119,17 +119,27 @@
         }
         /* 新增社交图标样式 */
         .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px; /* 控制图标间距 */
+            display: block;
             margin-top: 15px;
+            margin-left: 55px;
         }
-        .social-icon {
-            width: 12px;
-            height: 12px;
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* 控制垂直间距 */
+            text-decoration: none; /* 取消下划线 */
+            color:  #666; /* 使用父元素的文字颜色 */
         }
-        .social-icon:hover {
+
+        .social-links a:hover .social-icon {
             opacity: 0.8;
+        }
+
+        .social-icon {
+            width: 20px !important;
+            height: 20px !important;
+            margin-right: 8px; /* 控制图标与文字之间的水平间距 */
         }
     </style>
 </head>
@@ -145,18 +155,21 @@
         <!-- 社交图标 -->
         <div class="social-links">
             <a href="https://github.com/FeizeWu" target="_blank">
-                <img src="\github-mark.png" alt="GitHub" class="social-icon">
+                <img src="\github-mark.png" alt="GitHub" class="social-icon"> 
+                <span>GitHub</span>
             </a>
             <a href="https://scholar.google.com/citations?hl=en&user=8yDlggYAAAAJ" target="_blank">
                 <img src="\google_scholar.png" alt="Google Scholar" class="social-icon">
+                <span>Google Scholar</span>
             </a>
         </div>
+        
     </div>
 
     <!-- Main content: About and Publications -->
     <div class="main-content">
         <h1>About</h1>
-        <p>I am currently a junior student at <a href="https://sai.sysu.edu.cn/">School of Artificial Intelligence, Sun Yat-sen University</a>. <br>My research interests are in the areas of diffusion models, personalization and deep generative models.</p>
+        <p>I am currently a junior student at <a href="https://sai.sysu.edu.cn/">School of Artificial Intelligence, Sun Yat-sen University</a>, under the supervision of Associate Professor <a href="https://xudongmao.github.io/">Xudong Mao</a>. My research interests are in the areas of diffusion models, personalization and deep generative models.</p>
         <p>Email: wufz3@mail2.sysu.edu.cn</p>
 
         <h2>Publications</h2>
@@ -168,7 +181,7 @@
                 AAAI Conference on Artificial Intelligence (AAAI), 2025 <br>
                 <a href="https://www.arxiv.org/abs/2408.15914">[arXiv]</a>
                 <a href="https://pangy9.github.io/CoRe-page/">[project]</a>
-                [code(coming soon)]
+                <a href="https://github.com/pangy9/CoRe">[code]</a>
             </div>
             <div class="publication-item">
                 <strong>AttnDreamBooth: Towards Text-Aligned Personalized Text-to-Image Generation</strong><br>
