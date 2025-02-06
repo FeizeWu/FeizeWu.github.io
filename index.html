@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Homepage</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #ffffff;
+            color: #333;
+            margin-top: 30px;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-right: 0px solid #ccc;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: -50px;
+            margin-right: 30px;
+        }
+        .sidebar img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .sidebar h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #333;
+        }
+        .sidebar h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #666;
+        }
+        .sidebar p {
+            font-size: 16px;
+            color: #666;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #007acc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-content {
+            width: 75%;
+            padding: 20px;
+        }
+        .main-content a {
+            color: #007acc;
+            text-decoration: none;
+            /* margin-right: 0px; */
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .publications {
+            margin-top: 20px;
+        }
+        .publication-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .publication-item a {
+            color: #007acc;
+            text-decoration: none;
+            margin-right: 2px;
+        }
+        .patents {
+            margin-top: 20px;
+        }
+        .patent-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .patent-item a {
+            color: #007acc;
+            text-decoration: none;
+            margin-right: 2px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-size: 14px;
+            color: #666;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar with personal info -->
+    <div class="sidebar">
+        <img src="\profile.jpg" alt="Profile Photo">
+        <h2>Feize Wu</h2>
+        <h3>吴非泽</h3>
+        <p>Sun Yat-sen University</p>
+    </div>
+
+    <!-- Main content: About and Publications -->
+    <div class="main-content">
+        <h1>About</h1>
+        <p>I am currently a junior student at <a href="https://sai.sysu.edu.cn/">School of Artificial Intelligence, Sun Yat-sen University</a>. <br>My research interests are in the areas of diffusion models, personalization and deep generative models.</p>
+        <p>Email: wufz3@mail2.sysu.edu.cn</p>
+
+        <h2>Publications</h2>
+        <div class="publications">
+            <div class="publication-item">
+                <strong>CoRe: Context-Regularized Text Embedding Learning for Text-to-Image Personalization</strong><br>
+                <em><strong>Feize Wu*</strong> , Yun Pang*, Junyi Zhang*, Lianyu Pang*, Jian Yun, Baoquan Zhao, Qing Li, Xudong Mao</em>†<br>
+                [*indicates equal contribution]<br>
+                Preprint, 2024. <br>
+                <a href="https://www.arxiv.org/abs/2408.15914">[arXiv]</a>
+                <a href="https://pangy9.github.io/CoRe-page/">[project]</a>
+                [code(coming soon)]
+            </div>
+            <div class="publication-item">
+                <strong>AttnDreamBooth: Towards Text-Aligned Personalized Text-to-Image Generation</strong><br>
+                <em>Lianyu Pang, Jian Yin, Baoquan Zhao, <strong>Feize Wu</strong>, Fu Lee Wang, Qing Li, Xudong Mao</em>†<br>
+                Conference on Neural Information Processing Systems (NeurIPS), 2024 <br>
+                <a href="https://arxiv.org/abs/2406.05000">[arXiv]</a>
+                <a href="https://attndreambooth.github.io/">[project]</a>
+                <a href="https://github.com/lyuPang/AttnDreamBooth">[code]</a>
+            </div>
+        </div>
+        <div class="patents">
+            <h2>Patents</h2>
+            <div class="patent-item">
+                <strong>一种基于文本逆映射的背景嵌入和特征分离的个性化图像生成方法</strong><br>
+                <em><strong>吴非泽</strong>, 张均逸, 庞韵, 庞联雨, 毛旭东, 印鉴</em><br>
+                中国专利：2024107355573<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Feize Wu | Sun Yat-sen University</p>
+</footer>
+
+</body>
+</html>
